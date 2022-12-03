@@ -1,9 +1,9 @@
 [hub]
   protocol = https
 [user]
-  name = Amo Wu
-  email = amo260@gmail.com
-  signingkey = E77D0CB6
+	name = undermoodzyx
+	email = mygmzyx@gmail.com
+	signingkey = EA0AA9693
 [credential]
   helper = osxkeychain
 [color]
@@ -13,7 +13,7 @@
   log = auto
   ui = true
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
   editor = vim
 [help]
   autocorrect = 1
@@ -28,18 +28,27 @@
 [difftool]
   prompt = false
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   trustExitCode = false
+	path = 
 [merge]
   tool = sourcetree
 [mergetool]
   keepBackup = false
 [mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
   required = true
+	process = git-lfs filter-process
 [commit]
-  gpgsign = true
+	gpgsign = false
+	template = ~/.stCommitMsg
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	rebasee = true
+[url "https://github.com/"]
+	insteadOf = git://github.com/
