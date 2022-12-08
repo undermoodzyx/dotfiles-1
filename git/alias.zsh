@@ -1,0 +1,1 @@
+alias gsyn="git pull --rebase --autostash && git push"
