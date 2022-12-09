@@ -16,3 +16,6 @@
 
 # sftp configuration file
 sftp-config.json
+
+# for pc doesn't belong youself but want to do some stuff in it.
+custom.zsh
