@@ -68,25 +68,25 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 " set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/sainnhe/sonokai.git'
-Plug 'preservim/nerdtree'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'justinmk/vim-sneak'
+" Plug 'https://github.com/sainnhe/sonokai.git'
+" Plug 'preservim/nerdtree'
+" Plug 'yuezk/vim-js'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'justinmk/vim-sneak'
 
-call plug#end()
+" call plug#end()
 " Important!!
 if has('termguicolors')
   set termguicolors
 endif
 
 " The configuration options should be placed before `colorscheme sonokai`.
-let g:sonokai_style = 'maia'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 1
+" let g:sonokai_style = 'maia'
+" let g:sonokai_enable_italic = 1
+" let g:sonokai_disable_italic_comment = 1
 
-let g:vim_jsx_pretty_colorful_config = 1
+" let g:vim_jsx_pretty_colorful_config = 1
 
-colorscheme sonokai
+" colorscheme sonokai
