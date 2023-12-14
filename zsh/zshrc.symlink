@@ -47,3 +47,6 @@ then
 
   unset config_files
 fi
+
+# bun completions
+[ -s "/Users/qt_zyx/.bun/_bun" ] && source "/Users/qt_zyx/.bun/_bun"
