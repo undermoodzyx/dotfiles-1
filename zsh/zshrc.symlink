@@ -36,7 +36,9 @@ then
   # load everything but the path and completion files
   for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
   do
-    source $file
+    if [[ $file != */path.zsh ]] && [[ $file != */completion.zsh ]]; then
+      source $file
+    fi
   done
 
   # load every completion after autocomplete loads
@@ -49,4 +51,4 @@ then
 fi
 
 # bun completions
-[ -s "/Users/qt_zyx/.bun/_bun" ] && source "/Users/qt_zyx/.bun/_bun"
+# [ -s "/Users/qt_zyx/.bun/_bun" ] && source "/Users/qt_zyx/.bun/_bun"
