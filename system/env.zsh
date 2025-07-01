@@ -1,4 +1,4 @@
-export VISUAL='code'
+export VISUAL='vim'
 # export EDITOR='subl -w'
 alias cman="man 3"
 
