@@ -15,7 +15,10 @@ plugins=(git zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/etc/profile.d/z.sh
+if [ -f /usr/local/etc/profile.d/z.sh ];
+then
+  source /usr/local/etc/profile.d/z.sh
+fi
 
 # dotfiles
 # shortcut to this dotfiles path is $DOTFILES
@@ -52,3 +55,9 @@ fi
 
 # bun completions
 # [ -s "/Users/qt_zyx/.bun/_bun" ] && source "/Users/qt_zyx/.bun/_bun"
+
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi
