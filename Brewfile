@@ -30,6 +30,7 @@ brew 'trash'
 brew 'tree'
 brew 'swaks'
 brew 'xmake'
+brew 'llvm'
 # brew 'unrar'
 # brew 'youtube-dl'
 
