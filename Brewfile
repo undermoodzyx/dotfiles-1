@@ -29,6 +29,7 @@ brew 'ssh-copy-id'
 brew 'trash'
 brew 'tree'
 brew 'swaks'
+brew 'xmake'
 # brew 'unrar'
 # brew 'youtube-dl'
 
